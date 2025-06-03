@@ -3,6 +3,7 @@ package org.springframework.samples.petclinic.system;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.HashMap;
 import java.util.List;
@@ -95,7 +96,7 @@ public class I18nPropertiesSyncTest {
 
 		for (Path path : propertyFiles) {
 			Properties props = new Properties();
-			try (var reader = Files.newBufferedReader(path)) {
+			try (var reader = Files.newBufferedReader(path, StandardCharsets.ISO_8859_1)) {
 				props.load(reader);
 				localeToProps.put(path.getFileName().toString(), props);
 			}

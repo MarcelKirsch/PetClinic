@@ -138,3 +138,4 @@ INSERT INTO visits (id, pet_id, visit_date, description) VALUES (default, 30, '2
 INSERT INTO visits (id, pet_id, visit_date, description) VALUES (default, 31, '2025-02-14', 'Impfung – Katzenseuche');
 INSERT INTO visits (id, pet_id, visit_date, description) VALUES (default, 32, '2025-03-17', 'Krallen schneiden');
 INSERT INTO visits (id, pet_id, visit_date, description) VALUES (default, 33, '2025-04-25', 'Routinekontrolle');
+INSERT INTO visits (id, pet_id, visit_date, description) VALUES (default, 33, '2024-04-25', 'Routinekontrolle');
