@@ -69,6 +69,4 @@ public interface OwnerRepository extends JpaRepository<Owner, Integer> {
 	 */
 	Optional<Owner> findById(@Nonnull Integer id);
 
-	Optional<Owner> findByPet(@Nonnull Pet pet);
-
 }
